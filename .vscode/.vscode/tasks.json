@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CUDA Project",
+            "command": "/usr/local/cuda/bin/nvcc",
+            "args": [
+                "main.cpp",
+                "kernel.cu",
+                "-o",
+                "cuda_project"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
